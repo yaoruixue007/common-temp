@@ -1,0 +1,73 @@
+@import './initial.css';
+@import './vant.scss';
+
+
+
+img {
+  object-fit: cover;
+}
+
+.margin-top-content {
+  margin-top: $content-margin-top;
+}
+// 空状态样式
+.empty {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .empty-img {
+    width: 223px;
+    height: 125px;
+    background: url('../../assets/img/empty-icon.png');
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+  }
+  .empty-text {
+    text-align: center;
+    font-size: $tip-size;
+  }
+}
+.empty-class {
+  flex: 1;
+  margin-top: 15vh;
+}
+
+// 链接文字样式
+.protocol-link {
+  color: $main-color;
+  font-size: $tip-size;
+}
+
+// 底部按钮通用样式
+.bar-bottom {
+  width: 100%;
+  display: flex;
+  margin-top: $item-margin-top;
+  .van-button {
+    flex: 1;
+    margin-right: $content-margin-right;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// 弹框取消按钮
+.cancel-btn {
+  &.van-button {
+    background-color: #F1F3F5  !important;
+    color: #666666;
+  }
+}
+
+// 上阴影
+.top-shadow {
+  box-shadow: 0px 0px 4px 0px rgba(182,205,239,0.42);
+}
+
+// 图片图标通用样式
+.icon-common {
+  width: 20px;
+  height: 20px;
+}
